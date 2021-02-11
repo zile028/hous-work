@@ -1,0 +1,44 @@
+@mixin flex-row($h-align: none, $v-align: none) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: $h-align;
+    align-items: $v-align;
+}
+@mixin flex-col($h-align: none, $v-align: none) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: $v-align;
+    align-items: $h-align;
+}
+@mixin flex-wrap($h-align: none, $v-align: none) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $h-align;
+    align-items: $v-align;
+}
+
+@mixin button($font-color, $h-font-color, $bg-color, $h-bg-color, $border-color) {
+    color: $font-color;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 15px 30px;
+    background: $bg-color;
+    font-family: Arial, sans-serif;
+    border: solid transparent 1px;
+    border-color: $border-color;
+    border-width: 2px;
+    max-width: 145px;
+    &:hover {
+        transition: color 0.4s, background-color 0.4s, border-color 0.4s;
+        transition-timing-function: ease-in-out;
+        background-color: $h-bg-color;
+        color: $h-font-color;
+    }
+    @media screen and (max-width: 360px) {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+}

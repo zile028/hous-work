@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap");
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+@media screen and (min-width: 1201px) {
+}
+/*
+
+
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-transform: none;
+    text-decoration: none;
+    color: inherit;
+}
+p {
+    font-size: 12px;
+}
+h2 {
+    width: 100%;
+    font-size: 80px;
+    text-align: center;
+}
+h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+h4 {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+}
+h5 {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 65px;
+    }
+    h3 {
+        font-size: 35px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
